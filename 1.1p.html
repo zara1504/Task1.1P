@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zara's Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_page.css"> <!-- the link for the external CSS file -->
+    <style>
+        /* Inline CSS */
+        .myDiv 
+        {
+            border: 0px outset beige;
+            height: 200%;
+            width: 100%;
+            border-radius: 60px;
+            background-color: beige;
+            text-align: center;
+        }
+        body 
+        {
+            background-color: lavender;
+        }
+        h1 
+        {
+            color: lightblue;
+            font-size: 60px;
+            text-align: center;
+        }
+        /* the light pink container around the form */
+        .form-container 
+        {
+            border: 4px solid lightpink;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 10px;
+        }
+        /* the centering of the instagram link */
+        .instagram-link 
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--heading-->
+    <div class="myDiv">
+        <h1><b>This Page is About Snoopy and His Friends</b></h1>
+        <h2><b>Snoopy and Friends</b></h2>
+    </div>
+
+    <!-- image link-->
+    <img src="huggs.webp" alt="Image 1" style="border: 4px solid lightpink; float: right; margin: 25px 25px 25px 25px;">
+
+    <!--a container with a list of items-->
+    <div class="container">
+        <p><b>What do you think Snoopy is?</b></p>
+        <ul class="custom-list" id="classDiv">
+            <li>a dog?</li>
+            <li>a bird?</li>
+            <li>a human?</li>
+        </ul>
+    </div>
+
+    <!--the main body of writing in the code-->
+    <div style="border: 4px solid wheat; padding: 10px; margin: 20px; text-align:center;">
+        <p>Snoopy is an animated dog created by Charles M.Schulz. Snoopy has many friends including Woodstock his yellow fluffy bird, Charlie Brown his owner and many more.
+            Snoopy the black and white beagle made his first appearence to the world in a comic strip on October 4th 1950, and has been seen across the world in different 
+            movies, shows and comic strips with his friends the peanut group. Snoopy the small cute puppy has a goofy and curious personality. He has made many people across
+            the world happy and filled them with laughter since his first appearence.
+        </p>
+    </div>
+
+    <!-- the instagram link that will take you to the Snoopy instagram -->
+    <p class="instagram-link"><a href="https://www.instagram.com/snoopygrams/reels/">Snoopy and his Friends Instagram account</a></p>
+
+    <!-- the code for the table shown in the page-->
+    <table style="border: 4px solid lightslategray; margin: 30px auto; border-collapse: collapse;">
+        <tr>
+            <th>Snoopy</th>
+            <th>Woodstock</th>
+        </tr>
+        <tr> 
+            <td>Dog</td>
+            <td>Bird</td>
+        </tr>
+        <tr> 
+            <td>White and Fluffy</td>
+            <td>Yellow and Small</td>
+        </tr>
+    </table>
+
+    <!-- image link-->
+    <img src="glasses.jpeg" alt="Snoopy and Woodstock wearing glasses" style="border: 4px solid lightpink; display: block; margin: 20px auto;">
+
+    <!-- forum page area (has all the different comands and options for the forum in the website)-->
+    <div class="form-container">
+        <form class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="fname">
+            <br>
+            <label for="age">Age:</label>
+            <input type="text" name="age">
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone">
+            <br>
+            <label for="option">Please select an option:</label>
+            <select name="option">
+                <option selected disabled>Select an option based on who you are</option>
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>rather not say</option>
+                <option>Other</option>
+            </select>
+            <br>
+            <div>
+                <h3>Please check all the boxes relevant on your fav foods:</h3>
+                <label><input type="checkbox" name="game">Pizza</label>
+                <br>
+                <label><input type="checkbox" name="game">Noodles</label>
+                <br>
+                <label><input type="checkbox" name="game">Candy</label>
+                <br>
+            </div>
+            <div>
+                <fieldset>
+                    <h4>Please Select One of The Options Below On who is your fav character <3</h4>
+                    <label><input type="radio" name="game" />SNOOPY</label>
+                    <br/>
+                    <label><input type="radio" name="game" />WOODSTOCK</label>
+                    <br/>
+                    <label><input type="radio" name="game" />OTHER</label>
+                    <br/>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <textarea cols="40" rows="6" placeholder="Please Tell Us Your Comments"></textarea>
+                </fieldset>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
